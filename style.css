@@ -89,7 +89,8 @@ footer p{margin:0;}
 @media(min-width:768px){
   .nav-links{display:flex;}
   .menu-btn{display:none;}
-  .mobile-menu{display:none;}
+  .mobile-menu{display:none; flex-direction: column; background: var(--card-bg); box-shadow: 0 12px 30px rgba(16,24,40,0.08); overflow: hidden; max-height: 0; transition: max-height .35s;}
+  .mobile-menu.show{max-height:420px; }
   .container{padding:0 28px;}
   .hero-content{flex-direction:row;align-items:center;justify-content:space-between;text-align:left;gap:40px;padding:88px 0;}
   .hero-heading{font-size:2.6rem;max-width:640px;}
@@ -108,4 +109,5 @@ footer p{margin:0;}
   .hero-image{max-width:420px;}
   .team-card{min-height:auto;}
   .services-grid,.grid-3{grid-template-columns:1fr;}
+  .mobile-menu.show{display: flex;}
 }
